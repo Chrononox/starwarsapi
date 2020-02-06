@@ -1,12 +1,16 @@
 import React from 'react';
+import './Card.css';
 
-const Card = (shiplist) =>{
-    return(
-        <div>
-            <h1>Name: {shiplist[0]}</h1>
-            <h2>class</h2>
-        </div>
-    )
+class Card extends React.Component{
+
+    render(){
+        return(
+            <div className="card">
+                <h1>Name: {this.props.name}</h1>
+                <h2>class {this.props.shipClass}</h2>                
+            </div>
+        )
+    }
 }
 
 export default Card;

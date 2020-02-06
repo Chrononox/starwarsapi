@@ -6,8 +6,8 @@ class ShipList extends React.Component{
     constructor(){
         super()
         this.state ={
-            taco: 'yum',
             shipList: [],
+            isActive: false,
         }
     }
     componentDidMount(){
@@ -17,15 +17,25 @@ class ShipList extends React.Component{
         .catch(err => console.log(`X.X ${err}`))
     }
 
+    // ToggleData = (event) => this.setState({isActive: !this.state.isActive})
+
     render(){
+
+        const shipCards = this.state.shipList.map((ship, i) =>{
+            return <Card key={i} name={ship.name} shipClass={ship.starship_class} />
+        })
+
         if(this.state.shipList.length === 0){
-            return <h1>loading...</h1>
+            return <h1>O.O loading... O.O</h1>
+        }else if(this.state.isActive){
+            console.log("yeah")
         }else{
             return(
                 <div>
-                    {console.log(this.state.shipList)}
-                    <Card shiplist={this.state.shipList}/>
+                    <h1>Click for more info</h1>
+                   {shipCards}
                 </div>
+                
                 
             )
         }
