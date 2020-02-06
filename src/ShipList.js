@@ -17,7 +17,7 @@ class ShipList extends React.Component{
         .catch(err => console.log(`X.X ${err}`))
     }
 
-    // ToggleData = (event) => this.setState({isActive: !this.state.isActive})
+    
 
     render(){
 
@@ -34,13 +34,10 @@ class ShipList extends React.Component{
                 <div>
                     <h1>Click for more info</h1>
                    {shipCards}
-                </div>
-                
-                
+                </div> 
             )
         }
-       
-    }
+   }
 }
 export default ShipList;
 
