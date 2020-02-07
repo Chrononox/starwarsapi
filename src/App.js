@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
+import ShipList from './ShipList';
+
 
 function App() {
   return (
-    <h1>Hallow</h1>
+    <Fragment>
+      <ShipList />
+    </Fragment>
   );
 }
 
