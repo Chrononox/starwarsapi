@@ -3,6 +3,7 @@ body{
     justify-content: center;
 }
 .card {
+    width: 300px;
     margin: 5px;
     padding: 5px;
     background-color: lightgrey;
@@ -12,5 +13,6 @@ body{
 
 .card:hover {
     transform: scale(1.2);
+    font-size: 1.5em;
 }
 

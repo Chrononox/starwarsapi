@@ -17,12 +17,11 @@ class ShipList extends React.Component{
         .catch(err => console.log(`X.X ${err}`))
     }
 
-    
-
     render(){
 
         const shipCards = this.state.shipList.map((ship, i) =>{
-            return <Card key={i} name={ship.name} shipClass={ship.starship_class} />
+            return <Card key={i} name={ship.name} shipClass={ship.starship_class} 
+            manufacturer={ship.manufacturer} crew={ship.crew} hyperdrive={ship.hyperdrive_rating}/>
         })
 
         if(this.state.shipList.length === 0){
