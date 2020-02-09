@@ -8,11 +8,12 @@ class Card extends React.Component{
         
         return(
             <div className="card">
-                <h1>Name: {this.props.name}</h1>
-                <h2>Class: {this.props.shipClass}</h2>
-                <p>manufacturer: {this.props.manufacturer}</p>
-                <p>crew: {this.props.crew}</p>
-                <p>hyperdrive rating {this.props.hyperdrive}</p>
+                <h2>Name: {this.props.name}</h2>
+                <h3>Class: {this.props.shipClass}</h3>
+                {/* <p>Manufacturer: {this.props.manufacturer}</p>
+                <p>Crew: {this.props.crew}</p>
+                <p>Hyperdrive Rating: {this.props.hyperdrive}</p> */}
+                <p>Built by {this.props.manufacturer}. Requires {this.props.crew} crew to operate. The {this.props.name} has a hyperdrive rating of {this.props.hyperdrive}.</p>
             </div>
         )
     }

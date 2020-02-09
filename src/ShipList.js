@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card'
+import './ShipList.css';
 
 class ShipList extends React.Component{
 
@@ -30,8 +31,7 @@ class ShipList extends React.Component{
             console.log("yeah")
         }else{
             return(
-                <div>
-                    <h1>Click for more info</h1>
+                <div className='shiplist'>
                    {shipCards}
                 </div> 
             )

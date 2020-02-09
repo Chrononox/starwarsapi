@@ -1,14 +1,15 @@
 body{
-    display: flex;
-    justify-content: center;
+   
 }
 .card {
+    color: white;
     width: 300px;
-    margin: 5px;
-    padding: 5px;
-    background-color: lightgrey;
-    border: 2px solid black;
-    box-shadow: 3px 5px 15px black;
+    margin: 15px;
+    padding: 15px;
+    background-color: #000000;
+    border: 1px solid #ffe81f;
+    box-shadow: 3px 5px 15px #ffe81f;
+    border-radius: 50px;
 }
 
 .card:hover {
